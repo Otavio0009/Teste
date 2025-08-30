@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulhario de Cadastro principal</title>
+</head>
+    <style>
+    span{
+        
+        color: red;
+    }
+    div{
+        color: blue;
+    }
+    body{
+        background-color: greenyellow;
+        color: blueviolet;
+    }
+</style>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <h3><p>Preencha os campos abaixo para se cadastrar:</p></h3>
+    <form name="cadastro" autocomplete="on" onsubmit="alert('Enviei o formulario');" method="post" action="#">
+        Nome: <input type="text" name="nome" required><br>
+        Idade: <input type="number" name="idade" required><br>
+        Senha: <input type="password" name="senha" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <h1>Apredendo formulharios e alguns inputs</h1>
+        <form>
+        <label>Digite aqui um texto:</label><input type="text" /><br>
+        <label>Digite aqui números:</label><input type="number" min="0" step="10" max="100"/><br>
+        <label>Range:</label><input type="range" min="0" max="100" /><br>
+        <label>Cor:</label><input type="color" /><br>
+        <label>@email:</label><input type="email" type="submit" /><br>
+        <label>URL:</label><input type="url" /><br>
+        <label>data:</label><input type="date" /><br>
+        <label>Week:</label><input type="week" /><br>
+        <label>Mês:</label><input type="month" /><br>
+        <label>Checkbox:</label><input type="checkbox" /><input type="checkbox" /><br>
+        <label>Radio:</label><input type="radio" name="aceitar"/><input type="radio" name="aceitar"/><br>
+        <label>Hiddne:</label><input type="hidden" value="teste"/><br>
+        <label>File:</label><input type="file" multiple /><br>
+        <label>Search:</label><input type="search" /><br>
+        <label>Butão:</label><input type="submit" value="Enviar" /><br>
+    </form>
+    <br>
+    <h1>Checkbox e Radio</h1>
+        <form method="post">
+        <h3>Pizza</h3>
+        <p>Quais opções você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="frango">Pizza de frango<br>
+        <input type="checkbox" name="opcional[]" value="calabresa">Pizza de calabresa<br>
+        <input type="checkbox" name="opcional[]" value="mussarela">Pizza de mussarela<br>
+        <input type="checkbox" name="opcional][]" value="portuguesa">Pizza de portuguesa<br>
+        <p>Adicionais:</p>
+        <input type="checkbox" name="Adicionais" value="azeitona">+ Azeitona<br>
+        <input type="checkbox" name="Adicionais" value="catupiry">+ Catupiry<br>
+        <input type="checkbox" name="Adicionais" value="bacon">+ Bacon<br>
+        <input type="checkbox" name="Adicionais" value="cebola">+ Cebola<br>
+        <p>Escolha o tamanho:</p>
+        <input type="radio" name="Escolha" value="pequena">Pequena<br>
+        <input type="radio" name="Escolha" value="media">Média<br>
+        <input type="radio" name="Escolha" value="grande">Grande<br>
+        <input type="radio" name="Escolha" value="familia">Família<br>
+        <p>Borda recheada:</p>
+        <input type="radio" name="Borda" value="Sim">Sim<br>
+        <input type="radio" name="Borda" value="Não">Não<br>
+        <p>Bebidas:</p>
+        <input type="checkbox" name="Bebida" value="coca">Coca-cola<br>
+        <input type="checkbox" name="Bebida" value="fanta">Fanta<br>
+        <input type="checkbox" name="Bebida" value="sprite">Sprite<br>
+        <input type="checkbox" name="Bebida" value="guarana">Guaraná<br>
+        <input type="checkbox" name="Bebida" value="pepsi">Pepsi<br>
+        <input type="checkbox" name="Bebida" value="guarana ZERO">Guaraná ZERO<br>
+        <input type="checkbox" name="Bebida" value="coca ZERO">Coca-cola ZERO<br>
+        <input type="checkbox" name="Bebida" value="pepsi BLACK">Pepsi BLACK<br>
+        <input type="checkbox" name="Bebida" value="suco de laranja">Suco de laranja<br>
+        <input type="checkbox" name="Bebida" value="suco de uva">Suco de uva<br>
+        <input type="checkbox" name="Bebida" value="suco de maracuja">Suco de maracujá<br>
+        <input type="checkbox" name="Bebida" value="sem bebida">Sem bebida<br><br>
+        <button type="submit">Enviar Pedido</button>
+    </form>
+    <br>
+    <h1>Aprendendo select e textarea</h1>
+        <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="nome" required><br>
+        <label>Idade:</label> <input type="number" name="idade" required><br>
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="">Selecione o cargo</option><br>
+            <option value="admin">Administrador</option><br>
+            <option value="editor">Editor</option><br>
+            <option value="user">Usuário</option><br>
+            <option value="diretor">Diretor</option><br>
+            <option value="Presidente">Presidente</option><br>
+        </select><br>
+        <label>Cargo:</label>
+        <select name="role" multiple>
+            <option value="">Selecione o cargo</option><br>
+            <option value="admin">Administrador</option><br>
+            <option value="editor">Editor</option><br>
+            <option value="user">Usuário</option><br>
+            <option value="diretor">Diretor</option><br>
+            <option selected value="Presidente">Presidente</option><br>
+        </select><br>
+        
+        <label>senha</label><input type="password" name="senha" required><br>
+        <label>Asunto:</label><input type="text" name="senha" required><br>
+        
+        <label>Mensagem:</label><br>
+        <textarea name="mensagem" rows="10" cols="10">Menssage</textarea><br>
+        <button type="button">Clicavel</button> # Botão que não envia o formulário<br>
+        <button type="button" onclick="alert('Cliquei aqui')">Clicavel</button> # Botão que não envia o formulário só envia se usar onclick="alert('Cliquei aqui')"<br>
+        <button type="reset">Limpa</button><br>
+        <button type="submit">Emviar</button><br>
+    </form>
+    <br>
+    <h1>Apredendo formatação</h1>
+                <b>SOMMERVILLE, Ian</b>. <font color="red" face="terbuchert MS" >Engenharia de Software.</font> <u>10ª Ed. Editora Pearson, 2019</u>.
+PRESSMAN, Roger S.. <i>Engenharia de Software</i>: Uma Abordagem Profissional. <mark>8ª Ed. Editora McGraw-Hill Brasil, 2016.</mark>
+SBROCCO, J. H. T. C.; <sub>*</sub>MACEDO<sup>*</sup>, Paulo Cesar de. <strong> Metodologias ágeis:</strong> engenharia de software sob medida. <blockquote>São Paulo: Érica, v. 8, p. 9, 2012.</blockquote>
+    <br>
+    <h1>Testando div e span</h1>
+    <br>
+    <div id="menu-lateral">
+        <div id = links>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+    <p>Hello <div>wolrd!</div></p>
+    <br>
+    <p><span><b>Hello</b></span>, wolrd<span>!</span></p>
+    <br>
+    <h1>Fromulhario com fieldset</h1>
+    <fieldset>
+        <legend>Nome</legend>
+        <div class="row">
+                <label><b>Nome:</b></label><input type="text" value="Nome"><br>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Idade</legend>
+        <div class="row">
+                <label><b>Idade:</b></label><input type="text" value="Idade"><br>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <div class="row">
+                <label><b>Sexo:</b></label><input type="text" value="Sexo"><br>
+        </div>
+    </fieldset>
+    <button type="submit">Enviar</button>
+    <h1>Testando Embeds</h1>
+    <br>
+    <embed src="https://www.youtube.com/" width="600" height="450">
+    <p><span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Exercitationem ab laudantium numquam velit alias vero,
+        sit perspiciatis aspernatur nisi, odio nam fuga totam quis esse explicabo eveniet voluptate. Voluptas, reiciendis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde rerum,
+        non velit esse totam assumenda reprehenderit ullam perspiciatis sequi, minus,
+        numquam voluptatibus sed dolorem. Nihil nisi sunt est. 
+        Quia! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Ratione consequatur reiciendis a quibusdam doloremque illum tenetur quia,
+        libero, sunt quae error vitae magni totam saepe eaque quo dignissimos molestias quis.
+    </span></p>
+    <h1>Aprendendo iframe</h1>
+    <iframe src="https://dio.me" width="600" height="450"></iframe>
+    <br>
+    <h1>Testando vidio com Iframe</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cVZ73CheMn8?si=q9QRU8vbljLJXNmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <a href="index.html"><= Voltar para pagina principal</a>
+</body>
+</html>
